@@ -7,6 +7,10 @@ if [ -f /etc/lsb-release ]; then
         chmod +x bin/ipatool-2.0.1-linux-arm64
         sudo mv bin/ipatool-2.0.1-linux-arm64 /usr/local/bin/ipatool
     fi
+    # install pip3
+    if [ ! -f /usr/bin/pip3 ]; then
+        sudo apt install python3-pip
+    fi
 fi
 
 # install requirements
