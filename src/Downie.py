@@ -1,9 +1,7 @@
 import os
 import sys
 import json
-from src.utils.ipa_file import get_apps_from_csv
-from src.utils.log import *
-from src.History import History
+from src.utils import get_apps_from_csv
 
 
 class Downie:
